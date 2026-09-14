@@ -1,0 +1,43 @@
+---
+title: "What XGBoost Reveals About Credit Risk That Logistic Regression Misses"
+description: "A walkthrough bleh bleh bleh of how gradient-boosted trees capture nonlinear risk signals in consumer credit data — and why that matters for portfolio decisions."
+date: "2026-09-15"
+tags: ["Finance", "ML / AI"]
+---
+
+## The Standard Approach Falls Short
+
+Most credit risk models in production still rely on logistic regression. There are good reasons for this — interpretability, regulatory comfort, decades of institutional familiarity. But logistic regression makes a strong assumption: that the relationship between each feature and the log-odds of default is linear and additive.
+
+In consumer credit data, that assumption breaks down in predictable ways.
+
+## Where Nonlinearity Lives
+
+Consider utilization rate. A borrower at 30% utilization is meaningfully different from one at 70%, but the jump from 70% to 95% carries disproportionately more risk — the relationship is convex, not linear. Logistic regression can only approximate this by binning or adding polynomial terms manually. XGBoost finds it automatically.
+
+The same pattern appears in payment history. A single missed payment in 36 months tells a very different story than three consecutive misses — but the *sequence* matters as much as the count. Tree-based models naturally capture these interaction effects without requiring the analyst to specify them upfront.
+
+## The Experiment
+
+For my credit risk segmentation project, I ran both approaches on the same preprocessed dataset:
+
+- **Logistic regression** with standard scaling, no interaction terms
+- **XGBoost** with 5-fold cross-validation, early stopping, and default hyperparameters
+
+The XGBoost model identified a distinct "hidden risk" segment — borrowers with strong headline metrics (high income, low utilization) but subtle secondary signals (recent credit inquiries clustered in a short window, high revolving-to-installment ratio) that logistic regression scored as low risk.
+
+## What This Means for Portfolio Decisions
+
+This isn't an argument that XGBoost should replace logistic regression everywhere — it shouldn't, especially in regulated environments where model interpretability is a compliance requirement. But for internal analytics, screening, and portfolio-level risk monitoring, the ability to surface nonlinear interactions matters.
+
+The practical implication: if your risk segmentation only uses linear models, you likely have a cluster of accounts that *look* safe by traditional metrics but carry elevated default probability that only shows up in interaction effects.
+
+Statistical validation using Chi-squared tests and ANOVA confirmed that the segments XGBoost identified were significantly different from each other — this wasn't overfitting to noise, but real structure in the data.
+
+## Tools Used
+
+Python, scikit-learn, XGBoost, statsmodels, Matplotlib, Seaborn. Full preprocessing pipeline with cross-validation and performance evaluation.
+
+---
+
+*This analysis is based on my independent credit risk segmentation project. The dataset was publicly available consumer credit data, not proprietary.*

@@ -1,0 +1,280 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 18px;
+  }
+
+  body {
+    @apply bg-bg-primary text-text-primary font-serif;
+  }
+
+  ::selection {
+    @apply bg-navy/20 text-navy-dark;
+  }
+
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { @apply bg-bg-primary; }
+  ::-webkit-scrollbar-thumb { @apply bg-border rounded-full; }
+/* }
+
+@layer components {
+  .section-number {
+    @apply font-mono text-base text-gold-dark tracking-wider font-semibold;
+  }
+
+  .section-heading {
+    @apply text-4xl md:text-5xl font-bold text-navy-dark mt-2 font-serif;
+  }
+
+  /* ========================================
+     Ornamental paper card with masked flourish
+     ======================================== */
+  /* .paper-card {
+    --corner-image: url("/corner-flourish.png");
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #FDFCFA;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+    transition: all 300ms ease;
+    padding: 24px;
+  } */
+
+  /* .paper-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+  }
+
+  .paper-card::before,
+  .paper-card::after {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    pointer-events: none;
+    background-image: var(--corner-image);
+    background-size: contain;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+
+    transition: opacity 300ms ease;
+  } */
+
+  /* Top-left ornament
+  .paper-card::before {
+    top: -10px;
+    left: -10px;
+    opacity: 0.7;
+  }
+
+  /* Mirrored bottom-right ornament */
+  /* .paper-card::after {
+    right: -10px;
+    bottom: -10px;
+    transform: rotate(180deg);
+    opacity: 0.50;
+  } */
+
+  /* .paper-card:hover::before {
+    opacity: 0.45;
+  }
+
+  .paper-card:hover::after {
+    opacity: 0.35;
+  }
+
+  @media (min-width: 640px) {
+    .paper-card::before,
+    .paper-card::after {
+      width: 180px;
+      height: 180px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .paper-card::before,
+    .paper-card::after {
+      transition: none;
+    }
+  } */
+
+  /* .pill {
+    @apply inline-flex items-center px-4 py-1.5 rounded-full text-sm font-semibold
+           bg-navy-50 border border-navy/15 text-navy font-serif;
+  } */
+/* 
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg
+           bg-navy text-white font-bold text-base font-serif
+           transition-all duration-200
+           hover:bg-navy-dark hover:shadow-lg;
+  } */
+/* 
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg
+           border-2 border-gold text-gold-dark font-bold text-base font-serif
+           transition-all duration-200
+           hover:bg-gold-light;
+  } */
+
+  /* Blog prose */
+  /* .prose-blog { @apply text-text-secondary leading-relaxed font-serif; }
+  .prose-blog h1 { @apply text-4xl font-bold text-navy-dark mt-10 mb-4; }
+  .prose-blog h2 { @apply text-3xl font-bold text-navy-dark mt-8 mb-3; }
+  .prose-blog h3 { @apply text-2xl font-semibold text-navy-dark mt-6 mb-2; }
+  .prose-blog p { @apply mb-4 text-lg leading-8; }
+  .prose-blog a { @apply text-navy underline underline-offset-2 hover:text-navy-dark; }
+  .prose-blog code { @apply font-mono text-sm bg-navy-50 px-1.5 py-0.5 rounded text-navy; }
+  .prose-blog pre { @apply bg-navy-dark text-gray-200 border border-border rounded-lg p-4 overflow-x-auto my-6; }
+  .prose-blog pre code { @apply bg-transparent p-0 text-gray-200; }
+  .prose-blog ul { @apply list-disc list-inside mb-4 space-y-1; }
+  .prose-blog blockquote { @apply border-l-[3px] border-gold pl-4 italic text-text-muted my-4; }
+  .prose-blog hr { @apply border-border my-8; }
+} */ 
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 18px;
+  }
+
+  body {
+    @apply bg-bg-primary text-text-primary font-serif;
+  }
+
+  ::selection {
+    @apply bg-navy/20 text-navy-dark;
+  }
+
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { @apply bg-bg-primary; }
+  ::-webkit-scrollbar-thumb { @apply bg-border rounded-full; }
+}
+
+@layer components {
+  .section-number {
+    @apply font-mono text-base text-gold-dark tracking-wider font-semibold;
+  }
+
+  .section-heading {
+    @apply text-4xl md:text-5xl font-bold text-navy-dark mt-2 font-serif;
+  }
+
+  /* Embossed paper card — no corner elements */
+  .paper-card {
+    position: relative;
+    border-radius: 4px;
+    background: #FDFCFA;
+    padding: 24px;
+    box-shadow:
+      -4px 0 8px rgba(0,0,0,0.03),
+      4px 4px 16px rgba(0,0,0,0.1),
+      inset -2px -2px 4px rgba(0,0,0,0.04),
+      inset 2px 2px 4px rgba(255,255,255,0.8);
+    transition: all 300ms ease;
+  }
+
+  .paper-card:hover {
+    box-shadow:
+      -4px 0 8px rgba(0,0,0,0.04),
+      6px 6px 24px rgba(0,0,0,0.14),
+      inset -2px -2px 4px rgba(0,0,0,0.04),
+      inset 2px 2px 4px rgba(255,255,255,0.8);
+    transform: translateY(-2px);
+  }
+
+  /* Corner accents — only applied via .corner-card */
+  .corner-card::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 20px;
+    height: 20px;
+    border-top: 2.5px solid #1A365D;
+    border-left: 2.5px solid #1A365D;
+    pointer-events: none;
+  }
+
+  .corner-card::after {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2.5px solid #C6930A;
+    border-right: 2.5px solid #C6930A;
+    pointer-events: none;
+  }
+
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    color: #1A365D;
+    background: #FDFCFA;
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow:
+      3px 3px 6px rgba(0,0,0,0.1),
+      inset -1px -1px 2px rgba(0,0,0,0.03),
+      inset 1px 1px 2px rgba(255,255,255,0.7);
+    transition: all 200ms ease;
+  }
+
+  .pill:hover {
+    box-shadow:
+      4px 4px 10px rgba(0,0,0,0.14),
+      inset -1px -1px 2px rgba(0,0,0,0.03),
+      inset 1px 1px 2px rgba(255,255,255,0.7);
+    transform: translateY(-1px);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg
+           bg-navy text-white font-bold text-base font-serif
+           transition-all duration-200
+           hover:bg-navy-dark hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg
+           border-2 border-gold text-gold-dark font-bold text-base font-serif
+           transition-all duration-200
+           hover:bg-gold-light;
+  }
+
+  /* Blog prose */
+  .prose-blog { @apply text-text-secondary leading-relaxed font-serif; }
+  .prose-blog h1 { @apply text-4xl font-bold text-navy-dark mt-10 mb-4; }
+  .prose-blog h2 { @apply text-3xl font-bold text-navy-dark mt-8 mb-3; }
+  .prose-blog h3 { @apply text-2xl font-semibold text-navy-dark mt-6 mb-2; }
+  .prose-blog p { @apply mb-4 text-lg leading-8; }
+  .prose-blog a { @apply text-navy underline underline-offset-2 hover:text-navy-dark; }
+  .prose-blog code { @apply font-mono text-sm bg-navy-50 px-1.5 py-0.5 rounded text-navy; }
+  .prose-blog pre { @apply bg-navy-dark text-gray-200 border border-border rounded-lg p-4 overflow-x-auto my-6; }
+  .prose-blog pre code { @apply bg-transparent p-0 text-gray-200; }
+  .prose-blog ul { @apply list-disc list-inside mb-4 space-y-1; }
+  .prose-blog blockquote { @apply border-l-[3px] border-gold pl-4 italic text-text-muted my-4; }
+  .prose-blog hr { @apply border-border my-8; }
+}
