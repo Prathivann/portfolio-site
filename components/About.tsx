@@ -92,11 +92,11 @@ export default function About() {
         </div>
 
         <AnimateIn delay={0.5}>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mt-8">
             {facts.map((fact) => (
-              <div key={fact.label} className="paper-card py-8 px-6">
-                <p className="text-sm font-extrabold text-gold-dark tracking-wider">{fact.label}</p>
-                <p className="text-lg text-navy-dark mt-3 font-bold">{fact.value}</p>
+              <div key={fact.label} className="paper-card py-5 px-4 md:py-8 md:px-6">
+                <p className="text-xs md:text-sm font-extrabold text-gold-dark tracking-wider">{fact.label}</p>
+                <p className="text-sm md:text-lg text-navy-dark mt-2 md:mt-3 font-bold">{fact.value}</p>
               </div>
             ))}
           </div>
