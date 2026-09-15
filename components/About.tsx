@@ -95,7 +95,7 @@ export default function About() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mt-8">
             {facts.map((fact) => (
               <div key={fact.label} className="paper-card py-5 px-4 md:py-8 md:px-6">
-                <p className="text-xs md:text-sm font-extrabold text-gold-dark tracking-wider">{fact.label}</p>
+                <p className="text-[10px] md:text-sm font-extrabold text-gold-dark tracking-wide">{fact.label}</p>
                 <p className="text-sm md:text-lg text-navy-dark mt-2 md:mt-3 font-bold">{fact.value}</p>
               </div>
             ))}
