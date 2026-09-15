@@ -14,19 +14,19 @@ const projects = [
     title: "Credit Risk Segmentation",
     description: "Developed customer credit risk segments using XGBoost classification and statistical tests (Chi-squared, ANOVA) to identify risk tiers with full cross-validation pipeline.",
     github: "https://github.com/Prithivann",
-    date: "Sep 2025",
+    
   },
   {
     title: "Revenue & Conversion Dashboards",
     description: "Designed scalable Power BI dashboards analyzing ROAS and customer behavior trends across multiple brands, driving a 25.7% improvement in sales conversion.",
     github: "https://github.com/Prithivann",
-    date: "2023–2025",
+    
   },
   {
     title: "Global HR Analytics Pipeline",
     description: "Re-engineered ETL workflows in Tableau Prep Builder for a global HR analytics team, deployed dashboards across 10 facilities, and cleaned 2M+ records.",
     github: "https://github.com/Prithivann",
-    date: "2023",
+    
   },
 ];
 

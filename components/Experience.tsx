@@ -179,7 +179,7 @@ export default function Experience() {
         </AnimateIn>
 
         {/* Rectangular tabs */}
-        <div className="mt-10 flex gap-1.5">
+        <div className="mt-10 flex gap-1.5 overflow-x-auto pb-2">
           {categories.map((cat, i) => (
             <button
               key={cat.label}
