@@ -8,25 +8,21 @@ const projects = [
     title: "Credit Card Fraud Detection",
     description: "Built a Random Forest-based fraud detection model in Python with feature engineering, statistical evaluation, and visualization on imbalanced financial transaction data.",
     github: "https://github.com/Prathivann",
-    
   },
   {
     title: "Credit Risk Segmentation",
     description: "Developed customer credit risk segments using XGBoost classification and statistical tests (Chi-squared, ANOVA) to identify risk tiers with full cross-validation pipeline.",
     github: "https://github.com/Prathivann",
-    
   },
   {
     title: "Revenue & Conversion Dashboards",
     description: "Designed scalable Power BI dashboards analyzing ROAS and customer behavior trends across multiple brands, driving a 25.7% improvement in sales conversion.",
     github: "https://github.com/Prathivann",
-    
   },
   {
     title: "Global HR Analytics Pipeline",
     description: "Re-engineered ETL workflows in Tableau Prep Builder for a global HR analytics team, deployed dashboards across 10 facilities, and cleaned 2M+ records.",
     github: "https://github.com/Prathivann",
-    
   },
 ];
 
@@ -40,14 +36,11 @@ export default function Projects() {
           <div className="w-16 h-0.5 bg-gold mt-3" />
         </AnimateIn>
 
-        <div className="mt-12 grid md:grid-cols-2 gap-6">
+        <div className="mt-8 grid md:grid-cols-2 gap-6">
           {projects.map((project, i) => (
             <AnimateIn key={project.title} delay={i * 0.1}>
               <div className="paper-card h-full flex flex-col py-8 px-7">
-                <div className="flex items-start justify-between">
-                  <h3 className="text-xl font-extrabold text-navy-dark pr-4">{project.title}</h3>
-                  <span className="text-sm text-text-muted font-mono shrink-0">{project.date}</span>
-                </div>
+                <h3 className="text-xl font-extrabold text-navy-dark">{project.title}</h3>
 
                 <p className="mt-4 text-base text-text-secondary leading-relaxed flex-grow">
                   {project.description}
