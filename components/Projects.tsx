@@ -7,25 +7,25 @@ const projects = [
   {
     title: "Credit Card Fraud Detection",
     description: "Built a Random Forest-based fraud detection model in Python with feature engineering, statistical evaluation, and visualization on imbalanced financial transaction data.",
-    github: "https://github.com/Prithivann",
+    github: "https://github.com/Prathivann",
     
   },
   {
     title: "Credit Risk Segmentation",
     description: "Developed customer credit risk segments using XGBoost classification and statistical tests (Chi-squared, ANOVA) to identify risk tiers with full cross-validation pipeline.",
-    github: "https://github.com/Prithivann",
+    github: "https://github.com/Prathivann",
     
   },
   {
     title: "Revenue & Conversion Dashboards",
     description: "Designed scalable Power BI dashboards analyzing ROAS and customer behavior trends across multiple brands, driving a 25.7% improvement in sales conversion.",
-    github: "https://github.com/Prithivann",
+    github: "https://github.com/Prathivann",
     
   },
   {
     title: "Global HR Analytics Pipeline",
     description: "Re-engineered ETL workflows in Tableau Prep Builder for a global HR analytics team, deployed dashboards across 10 facilities, and cleaned 2M+ records.",
-    github: "https://github.com/Prithivann",
+    github: "https://github.com/Prathivann",
     
   },
 ];

@@ -6,7 +6,7 @@ import AnimateIn from "./AnimateIn";
 const links = [
   { label: "EMAIL", value: "prithivan8035@gmail.com", href: "mailto:prithivan8035@gmail.com", icon: Mail, iconColor: "text-navy" },
   { label: "LINKEDIN", value: "linkedin.com/in/prithivan-r", href: "https://linkedin.com/in/prithivan-r-817948219/", icon: Linkedin, iconColor: "text-gold-dark" },
-  { label: "GITHUB", value: "github.com/Prithivann", href: "https://github.com/Prithivann", icon: Github, iconColor: "text-navy" },
+  { label: "GITHUB", value: "github.com/Prathivann", href: "https://github.com/Prathivann", icon: Github, iconColor: "text-navy" },
 ];
 
 export default function Contact() {
